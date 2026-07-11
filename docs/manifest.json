@@ -1,0 +1,895 @@
+{
+    "id": "aio-metadata",
+    "version": "2.8.0",
+    "logo": "https://aiometadata.elfhosted.com/logo.png",
+    "background": "https://aiometadata.elfhosted.com/background.png",
+    "name": "AIOMetadata  | ElfHosted",
+    "description": "A metadata addon for power users. AIOMetadata uses TMDB, TVDB, TVMaze, MyAnimeList, IMDB and Fanart.tv to provide accurate data for movies, series, and anime. You choose the source.",
+    "resources": [
+        "catalog",
+        "meta"
+    ],
+    "types": [
+        "movie",
+        "series",
+        "anime.movie",
+        "anime.series",
+        "anime",
+        "Trakt",
+        "collection"
+    ],
+    "idPrefixes": [
+        "tmdb:",
+        "tt",
+        "tvdb:",
+        "mal:",
+        "tvmaze:",
+        "kitsu:",
+        "anidb:",
+        "anilist:",
+        "tvdbc:",
+        "upnext_",
+        "unwatched_",
+        "mdblist_upnext_",
+        "pmdb_resume_"
+    ],
+    "stremioAddonsConfig": {
+        "issuer": "https://stremio-addons.net",
+        "signature": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..3_iKJ-pKhR-LclfTPxvyag.uY747PgjymdL0OMdZrE7HTOVG-8nNWC-LrlJ5tCXm2i2FioXv_ismzWV0_XsLl0Me9cW9D3xog6d4tSHDY8Pe27mbIylUb61MS4VVqg_sFZXUVon2le-fRFrtmMnIqCF.oyYRDftPN2sohMpDMbMbYg"
+    },
+    "behaviorHints": {
+        "configurable": true,
+        "configurationRequired": false,
+        "newEpisodeNotifications": true
+    },
+    "catalogs": [
+        {
+            "id": "tmdb.trending",
+            "type": "movie",
+            "name": "Trending Movies",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Day",
+                        "Week"
+                    ],
+                    "isRequired": false,
+                    "default": "Day"
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.trending",
+            "type": "series",
+            "name": "Trending Shows",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Day",
+                        "Week"
+                    ],
+                    "isRequired": false,
+                    "default": "Day"
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.latest_movies.mltmmzhu",
+            "type": "movie",
+            "name": "Latest Movies",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.tv.latest_shows.mltmnwjd",
+            "type": "series",
+            "name": "Latest Shows",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action & Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Kids",
+                        "Mystery",
+                        "News",
+                        "Reality",
+                        "Sci-Fi & Fantasy",
+                        "Soap",
+                        "Talk",
+                        "War & Politics",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "streaming.sta_movie",
+            "type": "movie",
+            "name": "Best Movies of the 70s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.best_movies_of_80s.mlyccp2c",
+            "type": "movie",
+            "name": "Best Movies of the 80s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.best_movies_of_90s.mlycef71",
+            "type": "movie",
+            "name": "Best Movies of the 90s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.best_movies_of_2000s.mlycfa97",
+            "type": "movie",
+            "name": "Best Movies of the 2000s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.best_movies_of_2010s.mlycgh72",
+            "type": "movie",
+            "name": "Best Movies of the 2010s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.best_of_2020s.mp31ydsz",
+            "type": "movie",
+            "name": "Best Movies of the 2020s",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.20th_century_studios.mp429b5g",
+            "type": "movie",
+            "name": "20th Century Studios",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.dreamworks.mp42jyh6",
+            "type": "movie",
+            "name": "Dreamworks",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.lionsgate.mp42m4v3",
+            "type": "movie",
+            "name": "Lionsgate",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.lucas_films.mp42o6m9",
+            "type": "movie",
+            "name": "Lucasfilm Ltd",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.mgm_copy.mp48l9hq",
+            "type": "movie",
+            "name": "Marvel Studios",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.mgm.mp42pwqk",
+            "type": "movie",
+            "name": "MGM",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.paramount_pictures.mp42qquv",
+            "type": "movie",
+            "name": "Paramount Pictures",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.pixar.mp42rcp5",
+            "type": "movie",
+            "name": "Pixar",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.sony_pictures.mp42rzc4",
+            "type": "movie",
+            "name": "Sony Pictures",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.universal_pictures.mp42sup1",
+            "type": "movie",
+            "name": "Universal Pictures",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "tmdb.discover.movie.warner_bros_pictures.mp42tgft",
+            "type": "movie",
+            "name": "Warner Bros. Pictures",
+            "pageSize": 50,
+            "extra": [
+                {
+                    "name": "genre",
+                    "options": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "History",
+                        "Horror",
+                        "Music",
+                        "Mystery",
+                        "Romance",
+                        "Science Fiction",
+                        "TV Movie",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "isRequired": false
+                },
+                {
+                    "name": "skip"
+                }
+            ],
+            "showInHome": true
+        },
+        {
+            "id": "flixpatrol.starz.us.movie",
+            "type": "movie",
+            "name": "Top 10 Movies on Starz",
+            "pageSize": 10,
+            "extra": [],
+            "showInHome": true
+        },
+        {
+            "id": "flixpatrol.starz.us.series",
+            "type": "series",
+            "name": "Top 10 Shows on Starz",
+            "pageSize": 10,
+            "extra": [],
+            "showInHome": true
+        },
+        {
+            "id": "flixpatrol.crunchyroll.us.all",
+            "type": "all",
+            "name": "Top 10 on Crunchyroll",
+            "pageSize": 10,
+            "extra": [],
+            "showInHome": true
+        },
+        {
+            "id": "search.movie",
+            "type": "movie",
+            "name": "Movies Search",
+            "extra": [
+                {
+                    "name": "search",
+                    "isRequired": true
+                },
+                {
+                    "name": "skip"
+                }
+            ]
+        },
+        {
+            "id": "search.series",
+            "type": "series",
+            "name": "Series Search",
+            "extra": [
+                {
+                    "name": "search",
+                    "isRequired": true
+                },
+                {
+                    "name": "skip"
+                }
+            ]
+        },
+        {
+            "id": "search.anime_series",
+            "type": "anime.series",
+            "name": "Anime Series Search",
+            "extra": [
+                {
+                    "name": "search",
+                    "isRequired": true
+                },
+                {
+                    "name": "skip"
+                }
+            ]
+        },
+        {
+            "id": "search.anime_movie",
+            "type": "anime.movie",
+            "name": "Anime Movies Search",
+            "extra": [
+                {
+                    "name": "search",
+                    "isRequired": true
+                },
+                {
+                    "name": "skip"
+                }
+            ]
+        },
+        {
+            "type": "series",
+            "id": "calendar-videos",
+            "extra": [
+                {
+                    "name": "calendarVideosIds",
+                    "isRequired": true,
+                    "optionsLimit": 100
+                }
+            ],
+            "extraSupported": [
+                "calendarVideosIds"
+            ],
+            "extraRequired": [
+                "calendarVideosIds"
+            ],
+            "name": "Calendar videos"
+        }
+    ],
+    "configVersion": 1783735161962,
+    "language": "en",
+    "_debug": {
+        "language": "en",
+        "configVersion": 1783735161962,
+        "timestamp": "2026-07-11T02:00:47.942Z"
+    },
+    "_timestamp": 1783735247942
+}
